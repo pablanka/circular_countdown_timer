@@ -92,11 +92,7 @@ class CircularCountDownTimerState extends State<CircularCountDownTimer>
   }
 
   void _setAnimation() {
-    if (widget.isReverse) {
-      _controller.reverse(from: 1);
-    } else {
-      _controller.forward();
-    }
+    _controller.value = 1;
   }
 
   void _setAnimationDirection() {
@@ -151,6 +147,7 @@ class CircularCountDownTimerState extends State<CircularCountDownTimer>
       }
     });
 
+    _setAnimation()
     _setAnimationDirection();
     _setController();
   }
