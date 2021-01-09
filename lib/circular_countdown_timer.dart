@@ -147,7 +147,7 @@ class CircularCountDownTimerState extends State<CircularCountDownTimer>
       }
     });
 
-    _setAnimation()
+    _setAnimation();
     _setAnimationDirection();
     _setController();
   }
